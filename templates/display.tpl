@@ -1,13 +1,13 @@
 {**
  * plugins/generic/lensGalley/display.tpl
  *
- * Copyright (c) 2014-2017 Simon Fraser University
- * Copyright (c) 2003-2017 John Willinsky
+ * Copyright (c) 2014-2016 Simon Fraser University Library
+ * Copyright (c) 2003-2016 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * Embedded viewing of a PDF galley.
  *}
-<script src="{$jQueryUrl}"></script>
+<script src="{$pluginLensPath}/lib/jquery.min.js"></script>
 <script src="{$pluginLensPath}/lens.js"></script>
 <script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 <script type="text/javascript">{literal}
@@ -24,5 +24,8 @@
 		});
 		app.start();
 		window.app = app;
+
+		//Adding a back button and a map button to the body 
+		$("body").prepend('<a class="back-button" href="./">Regresar</a>');		
 	});
 {/literal}</script>
