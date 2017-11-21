@@ -1390,17 +1390,17 @@ body.loading .spinner-wrapper {
 .supplement {
   display: none; }
 
-  .back-button {
-display: block;
-position: absolute;
-top: 0px;
-right: 0px;
-z-index: 30000;
-padding: 9.5px;
-border-left: 1px solid #ddd;
-border-bottom: 1px solid #ddd;
-color: black;
-font-size: 13px;
+.back-button {
+  display: block;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  z-index: 30000;
+  padding: 9.5px;
+  border-left: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  color: black;
+  font-size: 13px;
 }
 
 .back-button:hover{
@@ -1408,4 +1408,10 @@ font-size: 13px;
 }
 
 .breadcrumbs {
-  min-height: 60px; }
+  min-height: 60px; 
+}
+
+/* Justificando el texto del panel izquierdo el que contiene el texto del artículo */
+.nodes .content-node {
+  text-align: justify; 
+}
